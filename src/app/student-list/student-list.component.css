@@ -1,0 +1,66 @@
+/* .container1 {
+    padding: 1rem 0rem;
+    width: 100%;
+    margin-right: 5px;
+    padding: 20px; 
+  } */
+  
+  
+    .td, th {
+     font-weight: bold;
+     font-size: 15px;
+      
+    }
+  
+    /* .table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      background-color:rgb(240, 247, 247)
+    } */
+    /* .card-header{
+      background-color: rgba(255, 235, 205, 0.384);
+      font-weight: bolder;
+    } */
+    tr:nth-child(even) {
+      background-color: rgb(212, 211, 211);
+    }
+  
+    /* .btn1 {
+        border: none; 
+        color: rgb(236, 25, 25); 
+        position: relative;
+        font-size: 24px;
+      }
+
+      .btn1:hover {
+        background-color: #800c0c; 
+        color: white;
+      } */
+
+      table {
+        width: 100%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-display:inherit;
+        font-size: 15px;
+      } 
+
+      .mat-cell {
+        padding: 10px 10px 10px 0;
+      }
+     
+      .mat-form-field{
+        margin-left: 10px;
+      }
+/*       
+      
+      .mat-elevation-z8{
+        background-color:white;
+      } */
+      /* .ng-container{
+        width: 50px;
+      } */
+
+.mytable{
+  min-width: fit-content;
+}  
+      

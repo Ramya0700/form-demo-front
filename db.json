@@ -1,0 +1,36 @@
+{
+  "people": [
+    {
+      "name": "Ramya",
+      "gender": "Female",
+      "dob": "1999-06-24",
+      "course": "Java",
+      "phoneNumber": "98675-67852",
+      "email": "ramya.v@gmail.com",
+      "comments": "java:getting started course",
+      "notification": true,
+      "id": 1
+    },
+    {
+      "name": "Dr.poiuo",
+      "gender": "Male",
+      "course": "Spring",
+      "phoneNumber": "78906-54231",
+      "email": "hari.m@gmail.com",
+      "comments": "spring:getting started",
+      "notification": true,
+      "id": 2
+    },
+    {
+      "name": "Hari",
+      "gender": "Male",
+      "dob": "1995-06-20",
+      "course": "Java",
+      "phoneNumber": "89076-90765",
+      "email": "hari.m@gmail.com",
+      "comments": "java:start",
+      "notification": true,
+      "id": 3
+    }
+  ]
+}

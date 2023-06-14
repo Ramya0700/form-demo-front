@@ -1,0 +1,31 @@
+.mat-card-content{
+    margin-left: 5ch;
+    text-align:justify;
+    font-family:monospace;
+    font-size: 15px;
+}
+
+.mat-card-actions{
+    margin-left: 550px;
+}
+
+.mat-card{
+    width: 700px;
+    background-color: rgb(210, 223, 199);
+}
+
+.avatar  {
+    margin-left: 50px;
+    vertical-align: left;
+    margin-bottom: 10px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+.background-image{
+    opacity: 0.3;
+} 
+
+.mat-button{
+    size: inherit;
+}

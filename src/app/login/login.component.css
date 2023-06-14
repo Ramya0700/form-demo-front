@@ -1,0 +1,14 @@
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 15%;
+    border-radius: 10%;
+  }
+
+  /* .container{
+      background-color: ivory;
+      width: 30%;
+  } */

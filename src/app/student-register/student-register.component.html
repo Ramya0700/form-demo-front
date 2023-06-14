@@ -1,0 +1,91 @@
+
+<br>
+<div class="container">
+  <h2>STUDENT FORM</h2>
+  <mat-divider></mat-divider>
+  <form  #form="ngForm" (ngSubmit)="onSubmit(form)">
+   
+    <div class="form-group">
+      <label for="name" style="font-weight: bolder;">Name: </label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required [(ngModel)]="student.name" name="name"
+        #nameField="ngModel" />
+        <div *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)"
+          class="alert alert-danger">**Name is required**
+      </div>
+    </div>
+  
+    
+  <div class=" form-group" >
+  <label id="example-radio-group-label" style="font-weight: bold;" >Gender :</label>
+  <mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="mat-radio-group" name="gender"
+  [(ngModel)]="student.gender" >
+  <label>
+  <mat-radio-button  class="example-radio-button" *ngFor="let gender of options" [value]="gender" >
+    {{gender}}
+  </mat-radio-button>
+    </label>
+   </mat-radio-group>
+    </div>
+
+    <div class="form-group">
+    <label for="birthday" style="font-weight: bolder;">Date of Birth:</label>
+    <input type="date" class="form-control" id="birthday" name="birthday" [(ngModel)]="student.dob" required>
+    </div>
+  
+    <div class="form-group">
+      <label  for="customSelect"  style="font-weight: bolder; " placeholder="Select your Courses here">Select your Course: </label>
+      <select class="form-control" id="course" required [(ngModel)]="student.course" name="course"
+        #courseField="ngModel" placeholder="d.ff">
+        <option [ngValue]="undefined" hidden>Select one Course </option>
+        <option  *ngFor="let cor of courses" [value]="cor">{{cor}}</option>
+      </select>
+      <div *ngIf="courseField.invalid && (courseField.dirty || courseField.touched)"
+        class="alert alert-danger"> ***Please Select the Course***
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber" style="font-weight: bolder;">Phone-Number: </label>
+      <input class="form-control" id="phoneNumber" placeholder="only number from 0-9" 
+        [(ngModel)]="student.phoneNumber" name="phoneNumber" #mobNumber="ngModel" required/>
+        <div *ngIf="mobNumber.invalid && (mobNumber.dirty || mobNumber.touched)"
+        class="alert alert-danger">**Number is required**
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" style="font-weight: bolder;">Email-Address: </label>
+      <input type=" email" class="form-control" id="email" placeholder="xxx@gmail.com" required [(ngModel)]="student.email" name="email"
+        #emailField="ngModel" />
+        <div *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)"
+        class="alert alert-danger"> ***E-mail is required***
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comments" style="font-weight: bolder;">Comments: </label>
+      <input type="textarea" class="form-control" id="comments" cols="30" rows="10"  placeholder="place your comments here.." [(ngModel)]="student.comments" name="comments" />
+    </div>
+    
+    <br>
+    <div class="form-group">
+      <mat-checkbox  class="form-control" name="notification" id="notification" [(ngModel)]="student.notification" required>Accept terms and conditions </mat-checkbox>
+    </div>
+    <br> 
+
+    <div>
+      <label>
+        <button  mat-button class="btn btn-success" [attr.disabled]="!form.valid? true:null" (click)="addStudent()" >
+          <mat-icon>done_all</mat-icon>Submit</button>
+      </label>
+      <label>
+        <button mat-button class="btn btn-primary" type="reset" value="Reset" (click)="warn()">
+          <mat-icon>restore</mat-icon>Reset</button>
+      </label>
+    </div>
+ 
+  </form>
+</div>
+<br>

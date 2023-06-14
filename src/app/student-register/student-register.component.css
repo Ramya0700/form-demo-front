@@ -1,0 +1,55 @@
+
+.container {  
+    padding: 20px;  
+    font-family: Calibri, Helvetica, sans-serif; 
+    font-size: 15px;
+    background-color: #f2f2f2; 
+    width:75%; 
+    position: inherit;
+    border-style:inset;
+  }  
+
+.ng-invalid .ng-dirty {
+ min-width: 1in;
+ border-left: 1px solid
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; 
+}
+
+
+label {
+  padding: 6px 6px 6px 0;
+  display: inline-block;
+  margin-right: 3.6px;
+}
+
+.alert alert-danger {
+  padding: 1rem;
+  font-size: 2px;
+  margin-bottom: 1rem;
+}
+
+.example-margin {
+  margin: 0 12px;
+  
+}
+
+
+
+.mat-radio-group {
+  display: flex;
+  /* margin: 7px 2px; */
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin-left: 5px;
+}
+
+.bar{
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

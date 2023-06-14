@@ -1,0 +1,44 @@
+
+<br>
+<br>
+<mat-card class="container" style="background-image: url('assets/images/faded.jpg');">
+  <mat-card-header>
+  <mat-card-title >STUDENT DETAILS</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <br>
+  <img mat-card-image src="assets/images/avatar.png" alt="avatar" class="avatar">
+  <mat-card-content class="mask" style="background-color: rgb(253, 253, 253); ">
+  <div *ngIf="student">
+  <div>
+    <label><b> Name         : </b></label> {{student.name}}
+  </div>
+  <div>
+    <label><b> Gender       : </b></label> {{student.gender}}
+  </div>
+  <div>
+    <label><b> Date of Birth  : </b></label> {{student.dob}}
+  </div>
+  <div>
+    <label><b> Course       : </b></label> {{student.course}}
+  </div>
+  <div>
+    <label><b> Email        : </b> </label> {{student.email}}
+  </div> 
+  <div>
+    <label><b> Contact Number  : </b></label> {{student.phoneNumber}}
+  </div>  
+  <div>
+    <label><b> Comment      : </b></label> {{student.comments}}
+  </div> 
+  <div>
+    <label><b> Accept Terms & Conditions : </b></label> {{student.notification}}
+  </div>  
+</div>
+</mat-card-content>
+
+<mat-card-actions><button mat-button (click)="list()"  class="btn btn-primary"><mat-icon>arrow_back</mat-icon>
+back </button><br></mat-card-actions>
+
+</mat-card>
+
